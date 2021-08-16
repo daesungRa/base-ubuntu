@@ -1,8 +1,8 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 MAINTAINER Ra Daesung "daesungra@gmail.com"
 
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8 TZ=Asia/Seoul
-ARG PYTHON_VERSION=3.6.8
+ARG PYTHON_VERSION=3.9.6
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
